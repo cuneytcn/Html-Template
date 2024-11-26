@@ -401,10 +401,110 @@
 
 		<!-- FOOTER -->
 
-		<footer class="relative py-11 md:pt-20">
+		<footer class="relative pt-11 md:pt-20">
 			<div class="container mx-auto px-8 md:px-16">
 				<div class="flex items-center justify-center">
 					<h3 class="font-heading text-[22px] capitalize">Bizimle İletişime Geçin</h3>
+				</div>
+
+				<form action="" method="" id="form" class="mx-auto flex max-w-3xl flex-col gap-6 py-12">
+					<div class="group/form relative">
+						<input id="name" type="text" placeholder="" class="peer h-16 w-full rounded-none border-b border-[#5A5D67] bg-transparent text-lg outline-none focus:outline-none" />
+						<label for="name" class="absolute -top-2 left-0 text-sm text-white transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-[#5A5D67]">Adınız ve Soyadınız (*)</label>
+						<div id="name-error" class="absolute bottom-0 left-0 hidden h-px w-full bg-[#EC008C]">
+							<span class="text-sm font-light text-[#EC008C]">Zorunlu alanlar boş birakilamaz !</span>
+						</div>
+					</div>
+					<div class="group/form relative">
+						<input id="email" type="text" placeholder="" class="peer h-16 w-full rounded-none border-b border-[#5A5D67] bg-transparent text-lg outline-none focus:outline-none" />
+						<label for="email" class="absolute -top-2 left-0 text-sm text-white transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-[#5A5D67]">E-posta Adresiniz (*)</label>
+						<div id="email-error" class="absolute bottom-0 left-0 hidden h-px w-full bg-[#EC008C]">
+							<span class="text-sm font-light text-[#EC008C]">Zorunlu alanlar boş birakilamaz !</span>
+						</div>
+					</div>
+					<div class="group/form relative">
+						<input id="phone" type="text" placeholder="" class="peer h-16 w-full rounded-none border-b border-[#5A5D67] bg-transparent text-lg outline-none focus:outline-none" />
+						<label for="phone" class="absolute -top-2 left-0 text-sm text-white transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-[#5A5D67]">Telefon Numaraniz (*)</label>
+						<div id="phone-error" class="absolute bottom-0 left-0 hidden h-px w-full bg-[#EC008C]">
+							<span class="text-sm font-light text-[#EC008C]">Zorunlu alanlar boş birakilamaz !</span>
+						</div>
+					</div>
+					<div class="group/form relative">
+						<input id="name" type="text" placeholder="" class="peer h-16 w-full rounded-none border-b border-[#5A5D67] bg-transparent text-lg outline-none focus:outline-none" />
+						<label for="name" class="absolute -top-2 left-0 text-sm text-white transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-[#5A5D67]">Mesajiniz</label>
+					</div>
+
+					<button type="submit" class="mx-auto mt-11 flex h-[40px] w-fit min-w-[190px] items-center justify-center rounded-lg bg-[#EC008C]">
+						<span class="text-lg text-white">Gönder</span>
+					</button>
+				</form>
+
+				<div id="form-message" class="fixed right-0 top-10 hidden h-auto w-fit rounded-lg bg-white p-4 font-medium text-black shadow-sm md:right-10">Mesajinizi aldik. En kisa surede size donus saglayacagiz.</div>
+
+				<div class="mx-auto flex max-w-3xl flex-col items-center justify-between gap-6 lg:flex-row">
+					<div class="flex items-center gap-4">
+						<p class="flex items-center gap-4">
+							<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.27476 10H8.28475V12H6.27476V10Z" fill="white" />
+								<path d="M10.2748 10H12.2848V12H10.2748V10Z" fill="white" />
+								<path d="M14.2748 10H16.2848V12H14.2748V10Z" fill="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.274755 11C0.274755 4.92487 5.19962 0 11.2748 0C17.3499 0 22.2748 4.92487 22.2748 11C22.2748 17.0751 17.3499 22 11.2748 22C9.60203 22 8.01415 21.626 6.59239 20.9563L0 22.2748L1.31848 15.6824C0.648783 14.2606 0.274755 12.6727 0.274755 11ZM11.2748 2C6.30419 2 2.27476 6.02944 2.27476 11C2.27476 12.4751 2.62888 13.8647 3.25588 15.091L3.41437 15.4009L2.54951 19.7252L6.87383 18.8604L7.1838 19.0189C8.41008 19.6459 9.79961 20 11.2748 20C16.2453 20 20.2748 15.9706 20.2748 11C20.2748 6.02944 16.2453 2 11.2748 2Z" fill="white" />
+							</svg>
+							<span class="capitalize md:text-lg">Şimdi Mail Atın</span>
+						</p>
+						<a href="mailto:info@fikirmedya.com.tr" class="text-sm">info@fikirmedya.com.tr</a>
+					</div>
+
+					<div class="flex items-center gap-4">
+						<p class="flex items-center gap-4">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H6.19982L7.35049 5.75334L4.92172 8.18211C5.86339 11.5116 8.48843 14.1366 11.8179 15.0783L14.2467 12.6495L20 13.8002V20H14.5455C6.51222 20 0 13.4878 0 5.45455V0ZM1.81818 1.81818V5.45455C1.81818 12.4836 7.51638 18.1818 14.5455 18.1818H18.1818V15.2907L14.8442 14.6232L12.3816 17.0859L11.8912 16.9733C7.49467 15.964 4.036 12.5053 3.02672 8.10882L2.91414 7.6184L5.37678 5.15575L4.70927 1.81818H1.81818Z" fill="white" />
+							</svg>
+							<span class="capitalize md:text-lg">Şimdi Arayın</span>
+						</p>
+						<a href="tel:05321117999" class="text-sm">0532 111 79 99</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-white px-8 md:px-16">
+				<div class="mx-auto mt-11 max-w-7xl">
+					<div class="flex flex-col items-center justify-center gap-4 pb-5 pt-11 lg:flex-row lg:justify-between">
+						<a href="/" class="order-2 flex items-center gap-1 lg:order-1">
+							<span class="text-xl font-semibold text-black">fikirmedya</span>
+							<svg class="-mt-2 size-2.5" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M35.3366 13.4034H25.8739C25.8739 13.4034 25.5597 13.333 25.4549 13.1571C25.3501 13.0164 25.3851 12.8054 25.4549 12.6647L30.1688 4.4335C30.3783 4.04657 30.2735 3.65963 29.8894 3.44858L24.1979 0.106868C23.8138 -0.104187 23.4297 0.00134042 23.2202 0.388275L18.5063 8.61943C18.5063 8.61943 18.2619 8.86566 18.0873 8.86566C17.9127 8.86566 17.773 8.76013 17.6683 8.61943L12.9544 0.388275C12.71 0.00134042 12.3259 -0.104187 11.9418 0.106868L6.18041 3.44858C5.79631 3.65963 5.69156 4.08174 5.90107 4.4335L10.6149 12.6647C10.6149 12.6647 10.7197 12.9812 10.6149 13.1571C10.5102 13.2978 10.3705 13.4034 10.1959 13.4034H0.733269C0.314258 13.4034 0 13.6848 0 14.142V20.8255C0 21.2476 0.27934 21.5642 0.733269 21.5642H10.1959C10.1959 21.5642 10.5102 21.6345 10.6149 21.8104C10.7197 21.9511 10.6848 22.127 10.6149 22.3028L5.90107 30.5692C5.69156 30.9561 5.79631 31.3431 6.18041 31.5541L11.9418 34.8958C12.3259 35.1069 12.71 35.0013 12.9195 34.6144L17.6334 26.3833C17.6334 26.3833 17.8778 26.137 18.0524 26.137C18.227 26.137 18.3666 26.2425 18.4714 26.3833L23.1853 34.6144C23.3948 35.0013 23.7789 35.1069 24.1629 34.8958L29.9243 31.5541C30.3084 31.3431 30.4132 30.9209 30.2037 30.5692L25.4898 22.338C25.4898 22.338 25.3851 22.0214 25.4898 21.8456C25.5946 21.7049 25.7342 21.5993 25.9088 21.5993H35.3715C35.7905 21.5993 36.1048 21.3179 36.1048 20.8606V14.1772C36.1048 13.7551 35.8254 13.4385 35.3715 13.4385L35.3366 13.4034Z" fill="#EC008C" />
+							</svg>
+						</a>
+						<p class="order-1 max-w-[24ch] text-center text-sm text-[#5A5D67] lg:order-2 lg:max-w-full">Copyright © 2023 fikirmedya, Created by Advermedia</p>
+						<div class="order-3 flex items-center justify-center gap-6">
+							<a href="" target="_blank" class="flex h-[25px] w-[25px] items-center justify-center rounded-full bg-[#282B37]">
+								<svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.63258 9.75163V16.1922H3.38793V9.75163H0.692383V7.14012H3.38793V6.18996C3.38793 2.66242 5.00402 0.807617 8.42338 0.807617C9.47165 0.807617 9.73371 0.961236 10.3078 1.08641V3.66947C9.66508 3.56706 9.48413 3.51017 8.81648 3.51017C8.02403 3.51017 7.59974 3.71499 7.21287 4.11895C6.82601 4.52291 6.63258 5.22273 6.63258 6.22409V7.14581H10.3078L9.32189 9.75732H6.63258V9.75163Z" fill="white" />
+								</svg>
+							</a>
+							<a href="" target="_blank" class="flex h-[25px] w-[25px] items-center justify-center rounded-full bg-[#282B37]">
+								<svg class="size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube">
+									<path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+									<path d="m10 15 5-3-5-3z" />
+								</svg>
+							</a>
+							<a href="" target="_blank" class="flex h-[25px] w-[25px] items-center justify-center rounded-full bg-[#282B37]">
+								<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.799 12.819H2.75151C1.63946 12.819 0.730957 11.9105 0.730957 10.7985V2.75102C0.730957 1.63897 1.63946 0.730469 2.75151 0.730469H10.799C11.911 0.730469 12.8195 1.63897 12.8195 2.75102V10.7985C12.8195 11.9155 11.916 12.819 10.799 12.819Z" fill="white" />
+									<path d="M6.77664 9.87995C5.94757 9.87995 5.16814 9.55725 4.58233 8.97144C3.99652 8.38563 3.67383 7.6062 3.67383 6.77713C3.67383 5.94806 3.99652 5.16863 4.58233 4.58282C5.16814 3.99701 5.94757 3.67432 6.77664 3.67432C7.60572 3.67432 8.38514 3.99701 8.97096 4.58282C9.55677 5.16863 9.87946 5.94806 9.87946 6.77713C9.87946 7.6062 9.55677 8.38563 8.97096 8.97144C8.38018 9.55725 7.60572 9.87995 6.77664 9.87995ZM6.77664 4.3346C5.43126 4.3346 4.33411 5.42679 4.33411 6.77713C4.33411 8.12251 5.4263 9.21967 6.77664 9.21967C8.12202 9.21967 9.21918 8.12748 9.21918 6.77713C9.21422 5.43175 8.12202 4.3346 6.77664 4.3346Z" fill="#282B37" />
+									<path d="M10.4854 3.57237C10.8144 3.57237 11.0812 3.30564 11.0812 2.97662C11.0812 2.64759 10.8144 2.38086 10.4854 2.38086C10.1564 2.38086 9.88965 2.64759 9.88965 2.97662C9.88965 3.30564 10.1564 3.57237 10.4854 3.57237Z" fill="white" />
+								</svg>
+							</a>
+							<a href="" target="_blank" class="flex h-[25px] w-[25px] items-center justify-center rounded-full bg-[#282B37]">
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.57532 4.91309H0.942383V13.3094H3.57532V4.91309Z" fill="white" />
+									<path d="M10.6974 4.73113C10.6003 4.719 10.4972 4.71293 10.394 4.70686C8.91982 4.6462 8.08869 5.5198 7.79749 5.89593C7.71862 5.99907 7.68222 6.05973 7.68222 6.05973V4.9374H5.16455V13.3337H7.68222H7.79749C7.79749 12.4783 7.79749 11.6289 7.79749 10.7735C7.79749 10.3125 7.79749 9.85141 7.79749 9.39034C7.79749 8.82007 7.75502 8.2134 8.04016 7.69167C8.28283 7.25487 8.71962 7.03647 9.21102 7.03647C10.667 7.03647 10.6974 8.35294 10.6974 8.47427C10.6974 8.48034 10.6974 8.4864 10.6974 8.4864V13.3701H13.3303V7.89187C13.3303 6.01727 12.3778 4.91313 10.6974 4.73113Z" fill="white" />
+									<path d="M2.25927 3.82714C3.1036 3.82714 3.78808 3.14267 3.78808 2.29833C3.78808 1.454 3.1036 0.769531 2.25927 0.769531C1.41493 0.769531 0.730469 1.454 0.730469 2.29833C0.730469 3.14267 1.41493 3.82714 2.25927 3.82714Z" fill="white" />
+								</svg>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
@@ -412,6 +512,6 @@
 		<!-- FOOTER -->
 
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-		<script src="/public/js/app.js"></script>
+		<script src="/js/app.js"></script>
 	</body>
 </html>
